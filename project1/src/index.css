@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  min-height: 100vh;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.beautiful-form {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+}
+
+.beautiful-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #5a189a;
+  font-size: 26px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #5a189a;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(90, 24, 154, 0.15);
+}
+
+.error {
+  color: #e63946;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #5a189a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #3c096c;
+}
+/* Table container */
+.table-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Table title */
+.table-title {
+  font-size: 24px;
+  color: #5a189a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table design */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Table header styles */
+.styled-table thead {
+  background-color: #5a189a;
+  color: white;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Row hover effect */
+.styled-table tbody tr:hover {
+  background-color: #e1bee7;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Alternate row colors */
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Table footer, showing no users message */
+.styled-table tbody td {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .styled-table {
+    font-size: 14px;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 10px;
+  }
+}
